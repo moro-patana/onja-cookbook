@@ -12,6 +12,7 @@ h1 {
     text-transform: capitalize;
     color: blueviolet;
     font-style: italic;
+    text-align: center;
 }
 h2 {
     font-size: 30px;
@@ -24,14 +25,17 @@ h2 {
     height: 37px;
     background-color: deepskyblue;
     border-radius: 10px;
+    margin: auto;
+    text-align: center;
 }
 
 .card-body {
     width: 360px;
-    height: 790px;
+    height: auto;
     background-color: aliceblue;
     box-shadow: 10px 5px 5px blueviolet;
     border-radius: 10px;
+    margin: auto;
 }
 .post-form {
     text-align: center;
@@ -40,7 +44,7 @@ label {
     font-size: 20px;
     color: #333333;
 }
-input {
+.form-control {
     width: 230px;
     height: 25px;
     border-radius: 5px;
@@ -62,6 +66,7 @@ select {
     border-radius: 5px;
     color: aliceblue;
     font-size: 14px;
+    margin-block-start: 1rem;
     margin-block-end: 1rem;
 }
 
@@ -72,6 +77,7 @@ select {
     border-radius: 5px;
     color: aliceblue;
     font-size: 14px;
+    margin-block-start: 1rem;
     margin-block-end: 1rem;
 }
 
