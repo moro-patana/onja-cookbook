@@ -18,6 +18,14 @@ h2 {
     color: brown;
     padding-block-start: 1rem;
 }
+
+#show-form {
+    width: 78px;
+    height: 37px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+}
+
 .card-body {
     width: 360px;
     height: 790px;
