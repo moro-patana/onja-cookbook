@@ -16,30 +16,22 @@ const steps = document.querySelector(`input[name="steps"]`);
 // Listen to the submit button
 const addCookBook = (event) => {
     event.preventDefault();
-const myHtml = `
-    <div class="card">
-      <div class="book">
-        <h5 class="card-title">${recipeName.value}</h5>
-        <img class="card-image" src="${resultImage.value}" alt="Card image cap">
-        <p class="card-text"> It was ${difficultySelect.value} so it took me ${timeSelect.value}</p>
-        <div>
-            <ul>
-            These are the ingredients:
-                <li>${ingredient.value}</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-            These are the steps:
-                <li>${steps.value}</li>
-            </ul>
-        </div>
-      </div>
-    </div>`;
-
-postList.insertAdjacentElement(`afterbegin`, myHtml);
-console.log(myHtml)
+    const recipes = [
+        {
+            title: `${recipeName.value}`,
+            pictures: `${resultImage.value}`,
+            author: `${cookName.value}`,
+            difficulty: `${difficultySelect.value}`,
+            timing: `${timeSelect.value}`,
+            ingredients: [`${ingredient.value}`],
+            steps: [`${steps.value}`]
+        }
+    ];
+console.log(recipes);
+form.reset()
 };
+
+
 
 const newIngredientsList = (event) => {
     event.preventDefault();
@@ -55,6 +47,9 @@ const stepsList = (event) => {
     <input type="text" class="form-steps" name="steps">`;
     addStepsBtn.insertAdjacentHTML(`beforebegin`, mySteps);
 }
+
+
+
 addStepsBtn.addEventListener(`click`, stepsList);
 
 
