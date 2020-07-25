@@ -1,0 +1,75 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-transform: capitalize;
+    color: blueviolet;
+    font-style: italic;
+}
+h2 {
+    font-size: 30px;
+    color: brown;
+    padding-block-start: 1rem;
+}
+.card-body {
+    width: 360px;
+    height: 790px;
+    background-color: aliceblue;
+    box-shadow: 10px 5px 5px blueviolet;
+    border-radius: 10px;
+}
+.post-form {
+    text-align: center;
+}
+label {
+    font-size: 20px;
+    color: #333333;
+}
+input {
+    width: 230px;
+    height: 25px;
+    border-radius: 5px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+select {
+    width: 230px;
+    height: 25px;
+    border-radius: 5px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.add-ingredient {
+    background-color: fuchsia;
+    width: 216px;
+    height: 30px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 14px;
+    margin-block-end: 1rem;
+}
+
+.add-steps {
+    background-color: fuchsia;
+    width: 176px;
+    height: 30px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 14px;
+    margin-block-end: 1rem;
+}
+
+.btn-primary {
+    width: 70px;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 10px
+}
