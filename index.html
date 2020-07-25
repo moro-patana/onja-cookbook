@@ -7,13 +7,9 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <h1>
-        Onja cookbook
-    </h1>
     <div class="container">
-        <div class="book">
-            
-        </div>
+        <h1>Onja cookbook</h1>
+            <div class="offset-2 col-8" id="post-list"></div>
     </div>
     <div class="col-8 offset-2">
         <button type="button" class="btn btn-sm btn-light" id="show-form">Hide form</button>
@@ -29,7 +25,6 @@
                             id="recipeName"
                             aria-describedby="recipeName"
                             placeholder="Enter recipe name"
-                            required
                         />
                     </div>
                     <div class="form-group">
@@ -39,7 +34,6 @@
                             name="resultImage"
                             rows="3"
                             placeholder="Enter image url"
-                            required
                         />
                     </div>
                     <div class="form-group">
@@ -50,7 +44,6 @@
                             name="cookName"
                             aria-describedby="cookName"
                             placeholder="Enter cook's name"
-                            required
                         />
                     </div>
                     <div class="form-group">
@@ -58,8 +51,8 @@
                             <select id="difficulty-select">
                                 <option value="">Easy</option>
                                 <option value="easy">Easy</option>
-                                <option value="medium">Medium</option>
-                                <option value="difficult">Difficult</option>
+                                <option value="quite difficult">Quite difficult</option>
+                                <option value="very difficult">Very difficult</option>
                             </select>
                     </div>
                     <div class="form-group">
@@ -75,26 +68,10 @@
                     </div>
                     <div class="form-group">
                         <label for="ingredient">Ingredients</label><br>
-                        <input
-                            type="text"
-                            class="form-control"
-                            name="ingredients"
-                            aria-describedby="ingredients"
-                            placeholder="Add ingredients"
-                            required
-                        /><br>
                         <button class="add-ingredient">Add a new ingredient to the list</button>
                     </div>
                     <div class="form-group">
-                        <label for="steps">Who's the cook?</label><br>
-                        <input
-                            type="text"
-                            class="form-control"
-                            name="steps"
-                            aria-describedby="steps"
-                            placeholder="Add the steps"
-                            required
-                        /><br>
+                        <label for="steps">Steps</label><br>
                         <button class="add-steps">Add a new step to the list</button>
                     </div>
 
